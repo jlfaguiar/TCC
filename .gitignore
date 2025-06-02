@@ -1,0 +1,45 @@
+# Arquivos binários de modelos grandes
+*.gguf
+*.bin
+*.ckpt
+*.pth
+*.pt
+*.h5
+*.pb
+*.tflite
+*.onnx
+*.joblib
+*.pkl
+*.sav
+
+# Modelos HuggingFace (transformers, BERTimbau etc.)
+/checkpoint-*/ 
+/runs/
+*/pytorch_model.bin
+*/tf_model.h5
+*/spiece.model
+*/tokenizer_config.json
+*/tokenizer.json
+*/vocab.txt
+
+# Diretórios de cache e dados
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints/
+*.log
+*.tmp
+*.npy
+*.npz
+
+# Checkpoints e modelos HuggingFace
+**/checkpoint-*/
+**/bertimbau-*/config.json
+**/bertimbau-*/model.safetensors
+**/bertimbau-*/special_tokens_map.json
+**/bertimbau-*/tokenizer_config.json
+**/bertimbau-*/trainer_state.json
+**/bertimbau-*/vocab.txt
+
+# Pastas de IDE
+**/.idea/
+*.iml
