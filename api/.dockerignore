@@ -1,0 +1,32 @@
+# Ignora diretórios de cache e build
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.ipynb
+venv/
+build/
+dist/
+
+# Ignora controle de versão
+.git/
+.gitignore
+
+# Ignora modelos pesados que não devem ir pra imagem
+*.gguf
+*.safetensors
+
+# Exceto o modelo que você precisa (mantém)
+!llm-models/openhermes.gguf
+
+# Ignora arquivos grandes ou temporários
+*.tar
+*.zip
+*.rar
+*.log
+
+# Evita copiar arquivos de ambiente
+.env
+.env.*
